@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+/* Reset and base styles  */
+* {
+	padding: 0px;
+	margin: 0px;
+	border: none;
+}
+
+html{
+    box-sizing: border-box;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+/* Links */
+
+a, a:link, a:visited  {
+    text-decoration: none;
+}
+
+a:hover  {
+    text-decoration: none;
+}
+
+/* Common */
+
+aside, nav, footer, header, section, main {
+	display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-size: inherit;
+	font-weight: inherit;
+}
+
+ul, ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+img, svg {
+	max-width: 100%;
+	height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+
+input, textarea, button, select {
+	font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button, input[type="submit"] {
+    display: inline-block;
+    box-shadow: none;
+    background-color: transparent;
+    background: none;
+    cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+    outline: none;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+label {
+	cursor: pointer;
+}
+
+legend {
+	display: block;
+}
+
+/* montserrat-regular - latin */
+@font-face {
+  font-display: swap; 
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/montserrat-v26-latin-regular.woff2') format('woff2'); 
+}
+/* montserrat-900italic - latin */
+@font-face {
+  font-display: swap; 
+  font-family: 'Montserrat';
+  font-style: italic;
+  font-weight: 900;
+  src: url('/fonts/montserrat-v26-latin-900italic.woff2') format('woff2'); 
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+/*/////////////////////////// H E A D E R ////////////////////////////////////*/
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-top: 20px;
+    background-color: white;
+}
+
+.wrapper{
+    max-width: 1292px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: left;
+}
+
+.header_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header_logo{
+    margin-right: 90px;
+    margin-left: 75px;
+}
+
+.header_logo_txt{
+    color: #3145ff;
+    display: inline-block;
+    color: #3145FF;
+}
+
+.header_logo_txt:last-child{
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #2A2D46;
+}
+
+.header_logo_pic{
+    margin-right: 7px;
+}
+
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_list{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.header_item{
+    margin-right: 32px; 
+}
+
+.header_item:last-child{
+    margin-right: 0; 
+}
+
+#points{
+    width: 19px;
+    height: 3px;
+}
+
+.header-link{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #2A2D46;
+}
+
+#number{
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+#to-order{
+    color: #EB2D66;
+    margin-top: 0;
+    padding: 7px;
+    border: 1px solid;
+    border-color: #EB2D66;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 13px;
+    letter-spacing: 0em;
+    
+}
+
+.header-link2{
+    text-decoration: none;
+}
+
+.header_nav_bask{
+    width: 25px;
+    height: 22.91px;
+    margin-right: 7px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.header-bask{
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+}
+
+
+.header-vector{
+    width: 11px;
+    height: 6px;
+    margin-top: 6px;
+}
+
+/*/////////////////////////F I R S T   S C R E E N////////////////////////////*/
+
+.first_screen_wrapper{
+    justify-content: left;
+}
+
+.first_screen{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.offer_const{
+    margin-right: 90px;
+    width: 544px;
+}
+
+#txt_h1{
+    font-size: 36px;
+    font-weight: 900;
+    line-height: 44px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 25px;
+}
+
+#content{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #2A2D46;
+    margin-bottom: 25px;
+    
+    width: 380px;
+    height: 78px;
+    top: 263px;
+    left: 215px;
+}
+
+.first_screen_btn{
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+}
+
+.watch_catalog{
+    border: 1px solid;
+    background-color: #EB2D66;
+    color:#FFFFFF;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+#watch_catalog_txt{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 42px;
+    margin-left: 42px;
+}
+/*////////////////////////// C O N T E N T 1 /////////////////////////////////*/
+
+.cross-back{
+    width: 515px;
+}
+
+.cross{
+    position: absolute;
+    width: 454px;
+    top: 207px;
+    left: 670px;
+}
+
+#desk_title{
+    position: absolute;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    
+    width: 153px;
+    height: 21px;
+    top: 160px;
+    left: 1125px;
+}
+
+#desk_main{
+    position: absolute;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    width: 235px;
+    height: 30px;
+    top: 184px;
+    left: 1125px;
+}
+
+#desk_price{
+    position: absolute;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: left;
+    
+    width: 61px;
+    height: 12px;
+    top: 220px;
+    left: 1125px;
+}
+
+#rectangle{
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    top: 150px;
+    left: 1105px;
+    color: #FFFFFF;
+}
+
+.description{
+    color: #FFFFFF;
+}
